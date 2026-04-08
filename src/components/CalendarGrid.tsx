@@ -138,9 +138,9 @@ export const CalendarGrid: React.FC<CalendarGridProps> = ({
         </button>
         <button
           onClick={handleClearSelection}
-          className="ml-auto px-3 py-1.5 text-xs sm:text-sm bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition-colors font-medium flex items-center gap-1"
+          className="ml-auto px-3 py-1.5 text-xs sm:text-sm bg-red-100 text-red-700 rounded-lg hover:bg-red-200 active:scale-95 transition-all duration-200 font-medium flex items-center gap-1.5 shadow-sm hover:shadow-md group"
         >
-          <RotateCcw className="w-3 h-3" />
+          <RotateCcw className="w-4 h-4 group-hover:rotate-180 transition-transform duration-500" strokeWidth={2} />
           Clear
         </button>
       </div>
