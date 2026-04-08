@@ -112,11 +112,11 @@ export const CalendarGrid: React.FC<CalendarGridProps> = ({
     <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8">
       {/* Header with stats */}
       <div className="mb-6">
-        <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-2">
+        <h3 className="font-poppins text-lg sm:text-xl lg:text-2xl font-800 text-gray-900 mb-2 tracking-tight">
           Select Date Range
         </h3>
         {selectedRange.start && selectedRange.end && (
-          <p className="text-sm text-gray-600">
+          <p className="font-inter text-sm text-gray-600 font-500">
             {selectedCount} {selectedCount === 1 ? 'day' : 'days'} selected
           </p>
         )}
@@ -126,21 +126,21 @@ export const CalendarGrid: React.FC<CalendarGridProps> = ({
       <div className="mb-6 flex flex-wrap gap-2">
         <button
           onClick={() => handleQuickSelect(7)}
-          className="px-3 py-1.5 text-xs sm:text-sm bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 active:scale-95 transition-all duration-200 font-medium shadow-sm hover:shadow-md"
+          className="font-inter px-3 py-1.5 text-xs sm:text-sm bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 active:scale-95 transition-all duration-200 font-600 shadow-sm hover:shadow-md"
         >
           Last 7 Days
         </button>
         <button
           onClick={() => handleQuickSelect(30)}
-          className="px-3 py-1.5 text-xs sm:text-sm bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 active:scale-95 transition-all duration-200 font-medium shadow-sm hover:shadow-md"
+          className="font-inter px-3 py-1.5 text-xs sm:text-sm bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 active:scale-95 transition-all duration-200 font-600 shadow-sm hover:shadow-md"
         >
           Last 30 Days
         </button>
         <button
           onClick={handleClearSelection}
-          className="ml-auto px-3 py-1.5 text-xs sm:text-sm bg-red-100 text-red-700 rounded-lg hover:bg-red-200 active:scale-95 transition-all duration-200 font-medium flex items-center gap-1.5 shadow-sm hover:shadow-md group"
+          className="font-inter ml-auto px-3 py-1.5 text-xs sm:text-sm bg-red-100 text-red-700 rounded-lg hover:bg-red-200 active:scale-95 transition-all duration-200 font-600 flex items-center gap-1.5 shadow-sm hover:shadow-md group"
         >
-          <RotateCcw className="w-4 h-4 group-hover:rotate-180 transition-transform duration-500" strokeWidth={2} />
+          <RotateCcw className="w-4 h-4 group-hover:rotate-180 transition-transform duration-500" strokeWidth={2.5} />
           Clear
         </button>
       </div>
@@ -150,7 +150,7 @@ export const CalendarGrid: React.FC<CalendarGridProps> = ({
         {dayNames.map((day) => (
           <div
             key={day}
-            className="text-center text-xs sm:text-sm font-semibold text-gray-500 py-2"
+            className="font-inter text-center text-xs sm:text-sm font-600 text-gray-600 py-2 uppercase tracking-wide"
           >
             {day}
           </div>

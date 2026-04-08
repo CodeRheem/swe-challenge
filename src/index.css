@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
+/* Professional font setup */
+@layer base {
+  body {
+    @apply font-inter;
+    font-feature-settings: "cv11" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins;
+    letter-spacing: -0.02em;
+  }
+
+  button {
+    @apply font-inter;
+  }
+}
+
 /* Custom animations for calendar */
 @layer utilities {
   @keyframes fade-in {

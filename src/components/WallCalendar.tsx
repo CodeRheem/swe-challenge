@@ -97,11 +97,11 @@ export const WallCalendar: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8 text-center">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-2 tracking-tight drop-shadow-lg">
-            📅 Wall Calendar
+          <h1 className="font-poppins text-4xl sm:text-5xl lg:text-6xl font-900 text-white mb-2 tracking-tight drop-shadow-xl" style={{ letterSpacing: '-0.02em' }}>
+            Wall Calendar 2026
           </h1>
-          <p className="text-white/90 text-sm sm:text-base drop-shadow">
-            Plan your {formatMonthYear(currentMonth).split(' ')[0]} with style. Select dates, take notes, stay organized.
+          <p className="font-inter text-white/85 text-sm sm:text-base font-500 drop-shadow-lg tracking-wide">
+            Organize & plan your {formatMonthYear(currentMonth).split(' ')[0].toLocaleUpperCase()} efficiently
           </p>
         </div>
 

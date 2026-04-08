@@ -63,8 +63,8 @@ export const QuickNoteModal: React.FC<QuickNoteModalProps> = ({
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b border-gray-200">
             <div>
-              <h3 className="text-lg font-bold text-gray-900">Add Note</h3>
-              <p className="text-sm text-gray-500 mt-1">{formatDateFull(date)}</p>
+              <h3 className="font-poppins text-lg font-700 text-gray-900">Add Note</h3>
+              <p className="font-inter text-sm text-gray-500 mt-1">{formatDateFull(date)}</p>
             </div>
             <button
               onClick={onClose}
@@ -72,7 +72,7 @@ export const QuickNoteModal: React.FC<QuickNoteModalProps> = ({
               aria-label="Close modal"
               title="Close"
             >
-              <X className="w-5 h-5 text-gray-500 group-hover:text-red-600 transition-colors duration-200" strokeWidth={2.5} />
+              <X className="w-5 h-5 text-gray-600 group-hover:text-red-600 transition-colors duration-200" strokeWidth={2.5} />
             </button>
           </div>
 
@@ -84,10 +84,10 @@ export const QuickNoteModal: React.FC<QuickNoteModalProps> = ({
               onKeyDown={handleKeyDown}
               placeholder="Write your note here... (Ctrl+Enter to save)"
               maxLength={300}
-              className="w-full h-32 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none text-sm"
+              className="font-inter w-full h-32 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none text-sm"
               autoFocus
             />
-            <p className="text-xs text-gray-500 mt-2">
+            <p className="font-inter text-xs text-gray-500 mt-2">
               {noteText.length}/300 characters
             </p>
           </div>
@@ -96,7 +96,7 @@ export const QuickNoteModal: React.FC<QuickNoteModalProps> = ({
           <div className="flex gap-2 p-6 border-t border-gray-200 bg-gray-50">
             <button
               onClick={onClose}
-              className="flex-1 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+              className="flex-1 px-4 py-2 text-sm font-600 text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
             >
               Cancel
             </button>
@@ -104,7 +104,7 @@ export const QuickNoteModal: React.FC<QuickNoteModalProps> = ({
               onClick={handleSave}
               className="flex-1 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg group"
             >
-              <Save className="w-4 h-4 group-hover:scale-110 transition-transform duration-200" strokeWidth={2} />
+              <Save className="w-4 h-4 group-hover:scale-110 transition-transform duration-200" strokeWidth={2.5} />
               Save Note
             </button>
           </div>

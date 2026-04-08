@@ -46,7 +46,7 @@ export const DayCell: React.FC<DayCellProps> = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className={`
-        relative aspect-square p-1 sm:p-2 rounded-lg font-medium text-xs sm:text-sm
+        font-inter relative aspect-square p-1 sm:p-2 rounded-lg font-600 text-xs sm:text-sm
         transition-all duration-200 cursor-pointer
         focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-blue-500
         ${getBaseStyles()}
@@ -74,7 +74,7 @@ export const DayCell: React.FC<DayCellProps> = ({
       {/* Note indicator - shows on hover or if notes exist */}
       {(hasNote || isHovered) && hasNote && (
         <div className="absolute bottom-0.5 left-1/2 -translate-x-1/2 transition-transform duration-200 hover:scale-125">
-          <FileText className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-md animate-pulse" strokeWidth={2} />
+          <FileText className="w-4 h-4 text-orange-600 fill-orange-600 drop-shadow-lg" strokeWidth={2.5} />
         </div>
       )}
 
