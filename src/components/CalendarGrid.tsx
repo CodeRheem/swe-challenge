@@ -126,13 +126,13 @@ export const CalendarGrid: React.FC<CalendarGridProps> = ({
       <div className="mb-6 flex flex-wrap gap-2">
         <button
           onClick={() => handleQuickSelect(7)}
-          className="px-3 py-1.5 text-xs sm:text-sm bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors font-medium"
+          className="px-3 py-1.5 text-xs sm:text-sm bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 active:scale-95 transition-all duration-200 font-medium shadow-sm hover:shadow-md"
         >
           Last 7 Days
         </button>
         <button
           onClick={() => handleQuickSelect(30)}
-          className="px-3 py-1.5 text-xs sm:text-sm bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors font-medium"
+          className="px-3 py-1.5 text-xs sm:text-sm bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 active:scale-95 transition-all duration-200 font-medium shadow-sm hover:shadow-md"
         >
           Last 30 Days
         </button>
