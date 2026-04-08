@@ -68,10 +68,11 @@ export const QuickNoteModal: React.FC<QuickNoteModalProps> = ({
             </div>
             <button
               onClick={onClose}
-              className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              className="p-2.5 hover:bg-red-100 rounded-lg transition-all duration-200 group transform hover:scale-110 active:scale-95"
               aria-label="Close modal"
+              title="Close"
             >
-              <X className="w-5 h-5 text-gray-500" />
+              <X className="w-5 h-5 text-gray-500 group-hover:text-red-600 transition-colors duration-200" strokeWidth={2.5} />
             </button>
           </div>
 
@@ -101,9 +102,9 @@ export const QuickNoteModal: React.FC<QuickNoteModalProps> = ({
             </button>
             <button
               onClick={handleSave}
-              className="flex-1 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
+              className="flex-1 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg group"
             >
-              <Save className="w-4 h-4" />
+              <Save className="w-4 h-4 group-hover:scale-110 transition-transform duration-200" strokeWidth={2} />
               Save Note
             </button>
           </div>

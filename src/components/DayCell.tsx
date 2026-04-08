@@ -73,8 +73,8 @@ export const DayCell: React.FC<DayCellProps> = ({
 
       {/* Note indicator - shows on hover or if notes exist */}
       {(hasNote || isHovered) && hasNote && (
-        <div className="absolute bottom-0.5 left-1/2 -translate-x-1/2">
-          <FileText className="w-3 h-3 text-orange-500 fill-orange-500" />
+        <div className="absolute bottom-0.5 left-1/2 -translate-x-1/2 transition-transform duration-200 hover:scale-125">
+          <FileText className="w-4 h-4 text-orange-500 fill-orange-500 drop-shadow-md animate-pulse" strokeWidth={2} />
         </div>
       )}
 

@@ -96,12 +96,12 @@ export const ImageSection: React.FC<ImageSectionExtendedProps> = ({
       <div
         className="flex items-center justify-between px-4 sm:px-6 py-4 sm:py-5 rounded-xl relative z-10"
         style={{
-          background: `linear-gradient(90deg, ${colors.primary}15 0%, ${colors.primary}30 50%, ${colors.primary}15 100%)`,
+          background: '#ffffff',
         }}
       >
         <button
           onClick={handlePrevMonth}
-          className="p-2 rounded-xl transition-all duration-200 group hover:shadow-md transform hover:scale-110"
+          className="p-3 rounded-xl transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-400/20 transform hover:scale-125 active:scale-95 flex items-center justify-center"
           style={{
             backgroundColor: buttonBgColor,
             color: buttonTextColor,
@@ -109,7 +109,7 @@ export const ImageSection: React.FC<ImageSectionExtendedProps> = ({
           aria-label="Previous month"
           title="Previous month"
         >
-          <ChevronLeft className="w-6 h-6" />
+          <ChevronLeft className="w-7 h-7 transition-transform duration-300 group-hover:-translate-x-1" strokeWidth={2.5} />
         </button>
 
         <div className="flex-1 mx-4 text-center">
@@ -120,7 +120,7 @@ export const ImageSection: React.FC<ImageSectionExtendedProps> = ({
 
         <button
           onClick={handleNextMonth}
-          className="p-2 rounded-xl transition-all duration-200 group hover:shadow-md transform hover:scale-110"
+          className="p-3 rounded-xl transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-400/20 transform hover:scale-125 active:scale-95 flex items-center justify-center"
           style={{
             backgroundColor: buttonBgColor,
             color: buttonTextColor,
@@ -128,7 +128,7 @@ export const ImageSection: React.FC<ImageSectionExtendedProps> = ({
           aria-label="Next month"
           title="Next month"
         >
-          <ChevronRight className="w-6 h-6" />
+          <ChevronRight className="w-7 h-7 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.5} />
         </button>
       </div>
     </div>
