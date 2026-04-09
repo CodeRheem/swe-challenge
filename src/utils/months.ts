@@ -3,6 +3,19 @@
  * Each month has a unique look with matching colors from the hero image
  */
 
+import jan from '../assets/download (7).jpg';
+import feb from '../assets/download (5).jpg';
+import mar from '../assets/download (3).jpg';
+import apr from '../assets/3D Wallpaper.jpg';
+import may from '../assets/Best.jpg';
+import jun from '../assets/4K Live wallpaper 🌶.jpg';
+import jul from '../assets/download (13).jpg';
+import aug from '../assets/download (8).jpg';
+import sep from '../assets/download (12).jpg';
+import oct from '../assets/download (10).jpg';
+import nov from '../assets/download (11).jpg';
+import dec from '../assets/download (4).jpg';
+
 export interface MonthConfig {
   month: number; // 0-11
   monthName: string;
@@ -21,7 +34,7 @@ export const monthConfigs: MonthConfig[] = [
   {
     month: 0, // January
     monthName: 'January',
-    imagePath: '/src/assets/download (7).jpg', // Blue eyes
+    imagePath: jan, // Blue eyes
     colors: {
       primary: '#1f2937', // Dark black/grey
       secondary: '#374151', // Medium grey
@@ -34,7 +47,7 @@ export const monthConfigs: MonthConfig[] = [
   {
     month: 1, // February
     monthName: 'February',
-    imagePath: '/src/assets/download (5).jpg', // Purple/dark
+    imagePath: feb, // Purple/dark
     colors: {
       primary: '#92400e', // Medium brown
       secondary: '#b45309', // Warm brown
@@ -47,7 +60,7 @@ export const monthConfigs: MonthConfig[] = [
   {
     month: 2, // March
     monthName: 'March',
-    imagePath: '/src/assets/download (3).jpg', // Blue eyes
+    imagePath: mar, // Blue eyes
     colors: {
       primary: '#3b82f6', // Blue
       secondary: '#06b6d4', // Cyan
@@ -60,7 +73,7 @@ export const monthConfigs: MonthConfig[] = [
   {
     month: 3, // April
     monthName: 'April',
-    imagePath: '/src/assets/3D Wallpaper.jpg', // Yellow eyes
+    imagePath: apr, // Yellow eyes
     colors: {
       primary: '#eab308', // Yellow
       secondary: '#fbbf24', // Amber
@@ -73,7 +86,7 @@ export const monthConfigs: MonthConfig[] = [
   {
     month: 4, // May
     monthName: 'May',
-    imagePath: '/src/assets/Best.jpg', // Red eyes
+    imagePath: may, // Red eyes
     colors: {
       primary: '#ef4444', // Red
       secondary: '#f97316', // Orange
@@ -86,7 +99,7 @@ export const monthConfigs: MonthConfig[] = [
   {
     month: 5, // June
     monthName: 'June',
-    imagePath: '/src/assets/4K Live wallpaper 🌶.jpg', // Red/orange owl
+    imagePath: jun, // Red/orange owl
     colors: {
       primary: '#f97316', // Orange
       secondary: '#ec4899', // Pink
@@ -99,7 +112,7 @@ export const monthConfigs: MonthConfig[] = [
   {
     month: 6, // July
     monthName: 'July',
-    imagePath: '/src/assets/download (13).jpg',
+    imagePath: jul,
     colors: {
       primary: '#16a34a', // Vibrant green
       secondary: '#22c55e', // Light green
@@ -112,7 +125,7 @@ export const monthConfigs: MonthConfig[] = [
   {
     month: 7, // August
     monthName: 'August',
-    imagePath: '/src/assets/download (8).jpg',
+    imagePath: aug,
     colors: {
       primary: '#6b7280', // Medium grey
       secondary: '#9ca3af', // Light grey
@@ -125,7 +138,7 @@ export const monthConfigs: MonthConfig[] = [
   {
     month: 8, // September
     monthName: 'September',
-    imagePath: '/src/assets/download (12).jpg',
+    imagePath: sep,
     colors: {
       primary: '#f3f4f6', // Off-white
       secondary: '#e5e7eb', // Light grey-white
@@ -138,7 +151,7 @@ export const monthConfigs: MonthConfig[] = [
   {
     month: 9, // October
     monthName: 'October',
-    imagePath: '/src/assets/download (10).jpg',
+    imagePath: oct,
     colors: {
       primary: '#f59e0b', // Amber
       secondary: '#f97316', // Orange
@@ -151,7 +164,7 @@ export const monthConfigs: MonthConfig[] = [
   {
     month: 10, // November
     monthName: 'November',
-    imagePath: '/src/assets/download (11).jpg',
+    imagePath: nov,
     colors: {
       primary: '#6366f1', // Indigo
       secondary: '#a855f7', // Purple
@@ -164,7 +177,7 @@ export const monthConfigs: MonthConfig[] = [
   {
     month: 11, // December
     monthName: 'December',
-    imagePath: '/src/assets/download (4).jpg',
+    imagePath: dec,
     colors: {
       primary: '#06b6d4', // Cyan
       secondary: '#0ea5e9', // Sky
