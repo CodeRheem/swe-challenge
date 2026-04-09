@@ -3,17 +3,17 @@
 /* Professional font setup */
 @layer base {
   body {
-    @apply font-inter;
+    font-family: 'Inter', sans-serif;
     font-feature-settings: "cv11" 1;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-poppins;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: -0.02em;
   }
 
   button {
-    @apply font-inter;
+    font-family: 'Inter', sans-serif;
   }
 }
 
