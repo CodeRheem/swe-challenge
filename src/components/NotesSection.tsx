@@ -82,7 +82,7 @@ export const NotesSection: React.FC<NotesSectionProps> = ({
     <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8">
       {/* Header */}
       <div className="mb-6">
-        <h3 className="font-poppins text-lg sm:text-xl lg:text-2xl font-800 text-gray-900 mb-3 flex items-center gap-3 tracking-tight">
+        <h3 className="text-lg sm:text-xl lg:text-2xl font-800 text-gray-900 mb-3 flex items-center gap-3 tracking-tight">
           <FileText className="w-7 h-7 text-orange-500 drop-shadow-md flex-shrink-0" strokeWidth={2.5} />
           Notes & Memos
         </h3>
@@ -112,7 +112,7 @@ export const NotesSection: React.FC<NotesSectionProps> = ({
             onChange={(e) => onMonthNotesChange(e.target.value)}
             placeholder={`Add general notes for ${monthName}...`}
             maxLength={500}
-            className="font-inter flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none text-sm"
+            className="flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none text-sm"
           />
           <p className="font-inter text-xs text-gray-500 mt-2">
             {monthNotes.length}/500 characters
@@ -121,7 +121,7 @@ export const NotesSection: React.FC<NotesSectionProps> = ({
 
         {/* Right: Date-specific notes */}
         <div className="flex flex-col">
-          <label className="font-inter text-sm font-600 text-gray-900 mb-3 flex items-center gap-2">
+          <label className="text-sm font-600 text-gray-900 mb-3 flex items-center gap-2">
             <span className="inline-block w-2.5 h-2.5 rounded-full bg-orange-500 shadow-md animate-pulse"></span>
             Date-Specific Notes
             {selectedRange.start && selectedRange.end && (
@@ -139,7 +139,7 @@ export const NotesSection: React.FC<NotesSectionProps> = ({
             </div>
           ) : rangeNotes.length === 0 ? (
             <div className="flex-1 flex items-center justify-center border-2 border-dashed border-gray-300 rounded-lg p-4 text-center">
-              <p className="font-inter text-sm text-gray-500">
+              <p className="text-sm text-gray-500">
                 No notes yet. Click dates in your range to add notes.
               </p>
             </div>
@@ -159,7 +159,7 @@ export const NotesSection: React.FC<NotesSectionProps> = ({
                         value={tempNoteText}
                         onChange={(e) => setTempNoteText(e.target.value)}
                         maxLength={200}
-                        className="font-inter w-full p-2 text-sm border border-orange-300 rounded mb-2 resize-none focus:ring-2 focus:ring-orange-500"
+                        className="w-full p-2 text-sm border border-orange-300 rounded mb-2 resize-none focus:ring-2 focus:ring-orange-500"
                       />
                       <div className="flex gap-2 items-center">
                         <button
@@ -176,7 +176,7 @@ export const NotesSection: React.FC<NotesSectionProps> = ({
                           Cancel
                         </button>
                       </div>
-                      <p className="font-inter text-xs text-gray-500 mt-2">
+                      <p className="text-xs text-gray-500 mt-2">
                         {tempNoteText.length}/200 characters
                       </p>
                     </>
@@ -185,13 +185,13 @@ export const NotesSection: React.FC<NotesSectionProps> = ({
                       <p className="font-inter text-xs font-600 text-orange-900 mb-2">
                         {formatDateFull(date)}
                       </p>
-                      <p className="font-inter text-sm text-gray-700 mb-2 whitespace-pre-wrap">
+                      <p className="text-sm text-gray-700 mb-2 whitespace-pre-wrap">
                         {note}
                       </p>
                       <div className="flex gap-2">
                         <button
                           onClick={() => handleEditDateNote(key)}
-                          className="font-inter flex-1 px-2 py-1 text-xs bg-orange-200 text-orange-900 rounded hover:bg-orange-300 transition-colors font-600"
+                          className="flex-1 px-2 py-1 text-xs bg-orange-200 text-orange-900 rounded hover:bg-orange-300 transition-colors font-600"
                         >
                           Edit
                         </button>

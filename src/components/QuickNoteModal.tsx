@@ -63,8 +63,8 @@ export const QuickNoteModal: React.FC<QuickNoteModalProps> = ({
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b border-gray-200">
             <div>
-              <h3 className="font-poppins text-lg font-700 text-gray-900">Add Note</h3>
-              <p className="font-inter text-sm text-gray-500 mt-1">{formatDateFull(date)}</p>
+              <h3 className="text-lg font-700 text-gray-900">Add Note</h3>
+              <p className="text-sm text-gray-500 mt-1">{formatDateFull(date)}</p>
             </div>
             <button
               onClick={onClose}
@@ -84,10 +84,10 @@ export const QuickNoteModal: React.FC<QuickNoteModalProps> = ({
               onKeyDown={handleKeyDown}
               placeholder="Write your note here... (Ctrl+Enter to save)"
               maxLength={300}
-              className="font-inter w-full h-32 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none text-sm"
+              className="w-full h-32 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none text-sm"
               autoFocus
             />
-            <p className="font-inter text-xs text-gray-500 mt-2">
+            <p className="text-xs text-gray-500 mt-2">
               {noteText.length}/300 characters
             </p>
           </div>

@@ -46,7 +46,7 @@ export const DayCell: React.FC<DayCellProps> = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className={`
-        font-inter relative aspect-square p-1 sm:p-2 rounded-lg font-600 text-xs sm:text-sm
+        relative aspect-square p-1 sm:p-2 rounded-lg font-600 text-xs sm:text-sm
         transition-all duration-200 cursor-pointer
         focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-blue-500
         ${getBaseStyles()}

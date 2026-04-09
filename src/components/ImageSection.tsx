@@ -77,11 +77,11 @@ export const ImageSection: React.FC<ImageSectionExtendedProps> = ({
             {/* Month Header - Positioned on image */}
             <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white">
               <div className="drop-shadow-xl">
-                <p className="font-inter text-xs sm:text-sm font-600 uppercase tracking-widest opacity-90 mb-1">
+                <p className="text-xs sm:text-sm font-600 uppercase tracking-widest opacity-90 mb-1">
                   {new Date(currentMonth).getFullYear()}
                 </p>
                 <h2
-                  className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-900 tracking-tight drop-shadow-lg" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)', letterSpacing: '-0.02em' }}
+                  className="text-3xl sm:text-4xl lg:text-5xl font-900 tracking-tight drop-shadow-lg" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)', letterSpacing: '-0.02em' }}
                 >
                   {formatMonthYear(currentMonth).split(' ')[0]}
                 </h2>
@@ -112,7 +112,7 @@ export const ImageSection: React.FC<ImageSectionExtendedProps> = ({
         </button>
 
         <div className="flex-1 mx-4 text-center">
-          <span className="font-inter text-xs sm:text-sm font-600 uppercase tracking-widest" style={{ color: '#000000' }}>
+          <span className="text-xs sm:text-sm font-600 uppercase tracking-widest" style={{ color: '#000000' }}>
             ← {new Date(currentMonth).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })} →
           </span>
         </div>
